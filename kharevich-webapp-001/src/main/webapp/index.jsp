@@ -2,6 +2,8 @@
     pageEncoding="utf-8"%>
 <html>
 <body>
-<h2>Hello World!</h2>
+	<%
+		response.sendRedirect("controller?command=go_to_logination_page");
+	%>
 </body>
 </html>
