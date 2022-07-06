@@ -5,6 +5,8 @@ import java.util.Map;
 
 import by.kharevich.app.controller.impl.DoLogination;
 import by.kharevich.app.controller.impl.GoToLoginationPageCommand;
+import by.kharevich.app.controller.impl.GoToMainAfterRegistrationCommand;
+import by.kharevich.app.controller.impl.GoToMainPageCommand;
 import by.kharevich.app.controller.impl.GoToRegistrationPageCommand;
 
 public class CommandProvider {
@@ -14,6 +16,10 @@ public class CommandProvider {
 		commands.put(CommandName.GO_TO_LOGINATION_PAGE, new GoToLoginationPageCommand());
 		commands.put(CommandName.GO_TO_REGISTRATION_PAGE, new GoToRegistrationPageCommand());
 		commands.put(CommandName.DO_LOGINATION, new DoLogination());
+		commands.put(CommandName.GO_TO_MAIN_PAGE, new GoToMainPageCommand());
+		commands.put(CommandName.GO_TO_MAIN_AFTER_REGISTRATION, new GoToMainAfterRegistrationCommand());
+		
+		
 	}
 	
 	

@@ -27,7 +27,7 @@
 <body>
 
 
-<form action="Registration" method="get"> 
+<form action="controller" method="get"> 
   <h1>Создание учётной записи:</h1>
   <div>
     <input type="text" id="first_name" name="first_name" required>
@@ -60,6 +60,7 @@
   </div><br/>
   
   <div>
+    <input type="hidden" name="command" value="go_to_main_after_registration" />
     <input type="submit" value="Зарегистрироваться"/>
     <button type="reset">Очистить форму</button>
   </div>
